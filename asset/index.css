@@ -1,0 +1,60 @@
+body {
+    background-color: #555555;
+    font-family: "Determination Mono";
+}
+
+#top {
+    margin-bottom: 50px;
+}
+
+#top .avatar {
+    border-radius: 64px;
+    border: 3px double;
+    display: inline-block;
+}
+
+#top .prez {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    top: 10px;
+    width: 832px;
+}
+
+#top .prez h1 {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid black;
+}
+
+#top .info {
+    padding-left: 15px;
+}
+
+#content {
+    width: 980px;
+    margin: 0 auto;
+    background-color: #eeeeee;
+    box-shadow: 5px 5px 5px #000;
+    padding: 50px;
+}
+
+#core .col {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+}
+
+.lttp {
+    list-style-type: none;
+    padding: 0 0 0 10px;
+}
+
+.lttp li {
+    position: relative;
+    top: 0;
+    line-height: 19px;
+}
+.lttp li:before{
+    content: url("./book.png");
+}
