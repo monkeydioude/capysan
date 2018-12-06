@@ -9,7 +9,7 @@ function mmark(parentNode: Element) {
 }
 
 export function Mcursors(selector: string) {
-    let nodes = document.querySelectorAll(selector)
+    let nodes: NodeListOf<HTMLElement> = document.querySelectorAll(selector)
     for (let i = 0; i < nodes.length; i++) {
         mmark(nodes[i])
         let pos = nodes[i].getAttribute('data-m-gauge-pos')
@@ -21,7 +21,7 @@ export function Mcursors(selector: string) {
         nodes[i].style.width = pos + '%'
 
         if (pos == "100") {
-            nodes[i].style.borderRadius = "15px"
+            nodes[i].classList.add("m100")
         }
     }
 }
