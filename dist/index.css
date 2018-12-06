@@ -86,6 +86,10 @@ body {
     background-color: #eeeeee;
 }
 
+.section.lang .lttp li {
+    margin-bottom: 10px;
+}
+
 .m-gauge {
     background-color: #9badb7;
     border-radius: 15px;
@@ -187,4 +191,5 @@ body {
 .section.exp .lttp li ul li:before {
     content: ">";
     margin-right: 5px;
+    top: 0;
 }
