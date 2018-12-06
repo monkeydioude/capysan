@@ -79,7 +79,7 @@ body {
 .m-gauge {
     background-color: #9badb7;
     border-radius: 15px;
-    border: 1px solid black;
+    border: 2px solid black;
     display: block;
     height: 16px;
     position: relative;
