@@ -90,10 +90,23 @@
 /*!**********************!*\
   !*** ./src/index.ts ***!
   \**********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("\n\n//# sourceURL=webpack:///./src/index.ts?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mgauge__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./mgauge */ \"./src/mgauge.ts\");\n\ndocument.addEventListener('DOMContentLoaded', function () {\n    Object(_mgauge__WEBPACK_IMPORTED_MODULE_0__[\"Mcursors\"])('.m-cursor');\n});\n\n\n//# sourceURL=webpack:///./src/index.ts?");
+
+/***/ }),
+
+/***/ "./src/mgauge.ts":
+/*!***********************!*\
+  !*** ./src/mgauge.ts ***!
+  \***********************/
+/*! exports provided: Mcursors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Mcursors\", function() { return Mcursors; });\nfunction mmark(parentNode) {\n    var marks = [\"MAX\", \"80\", \"60\", \"40\", \"20\"];\n    for (var i = 0; i < marks.length; i++) {\n        var el = document.createElement(\"span\");\n        el.textContent = marks[i];\n        parentNode.insertBefore(el, parentNode.querySelector(\"span\"));\n    }\n}\nfunction Mcursors(selector) {\n    var nodes = document.querySelectorAll(selector);\n    for (var i = 0; i < nodes.length; i++) {\n        mmark(nodes[i]);\n        var pos = nodes[i].getAttribute('data-m-gauge-pos');\n        if (pos === undefined) {\n            continue;\n        }\n        nodes[i].style.width = pos + '%';\n        if (pos == \"100\") {\n            nodes[i].style.borderRadius = \"15px\";\n        }\n    }\n}\n\n\n//# sourceURL=webpack:///./src/mgauge.ts?");
 
 /***/ })
 

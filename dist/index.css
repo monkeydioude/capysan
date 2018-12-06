@@ -1,0 +1,148 @@
+@font-face { /* Undertale */
+    font-family: 'Undertale';
+    src: url('http://vignette2.wikia.nocookie.net/heliosanctus/images/c/c0/Determination.eot');
+    src: url('http://vignette2.wikia.nocookie.net/heliosanctus/images/c/c0/Determination.eot?#iefix') format('embedded-opentype'),
+         url('http://vignette3.wikia.nocookie.net/heliosanctus/images/a/aa/Determination.woff2') format('woff2'),
+         url('http://vignette3.wikia.nocookie.net/heliosanctus/images/3/37/Determination.woff') format('woff'),
+         url('http://vignette2.wikia.nocookie.net/heliosanctus/images/c/cd/Determination.ttf') format('truetype'),
+         url('http://vignette3.wikia.nocookie.net/heliosanctus/images/7/7f/Determination.svg#Undertale') format('svg');}
+
+body {
+    background-color: #555555;
+    font-family: "Determination Mono";
+}
+
+#top {
+    margin-bottom: 50px;
+}
+
+#top .avatar {
+    border-radius: 64px;
+    border: 3px double;
+    display: inline-block;
+}
+
+#top .prez {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    top: 10px;
+    width: 832px;
+}
+
+#top .prez h1 {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid black;
+}
+
+#top .info {
+    padding-left: 15px;
+}
+
+#content {
+    width: 980px;
+    margin: 0 auto;
+    background-color: #eeeeee;
+    box-shadow: 5px 5px 5px #000;
+    padding: 50px;
+}
+
+#core .col {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+}
+
+.lttp {
+    list-style-type: none;
+    padding: 0 0 0 10px;
+}
+
+.lttp li {
+    position: relative;
+    top: 0;
+    line-height: 19px;
+}
+.lttp li:before{
+    position: relative;
+    top: 3px;
+}
+
+.training .lttp li:before {
+    content: url("../assets/book.png");
+}
+.section .dasso {
+    position: relative;
+}
+
+.section .dasso h2 {
+    border-bottom: 2px solid #444444;
+    /* position: relative;
+    z-index: 1; */
+    margin: 0 5px;
+}
+
+.section .dasso h2 {
+    background-color: #eeeeee;
+}
+/* .section .dasso h2::before {
+    border-top: 2px solid #000000;
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 95%;
+    z-index: -1;
+} */
+
+.m-gauge {
+    background-color: #9badb7;
+    border-radius: 15px;
+    display: block;
+    height: 30px;
+    position: relative;
+    width: 96%;
+}
+
+.m-cursor {
+    background-color: #99e550;
+    border-radius: 15px 0 0 15px;
+    display: block;
+    height: 100%;
+}
+
+.m-gauge span:not(.m-cursor) {
+    position: absolute;
+    border-left: 1px solid;
+    padding-left: 2px;
+}
+
+.m-gauge span:not(.m-cursor):nth-child(1) {
+    left: 20%;
+}
+.m-gauge span:not(.m-cursor):nth-child(2) {
+    left: 40%;
+}
+.m-gauge span:not(.m-cursor):nth-child(3) {
+    left: 60%;
+}
+.m-gauge span:not(.m-cursor):nth-child(4) {
+    left: 80%;
+}
+.m-gauge span:not(.m-cursor):last-child {
+    left: 100%;
+    border-left: none;
+    border-radius: 15px;
+}
+
+.m100.m-cursor{
+    border-radius: 15px;
+}
+
+.nihongo {
+    font-family: "Undertale";
+}
