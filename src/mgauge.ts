@@ -1,4 +1,4 @@
-function mmark(parentNode: Element) {
+function mmark(parentNode: Element): void {
     let marks = ["MAX", "80", "60", "40", "20"]
     
     for (let i = 0; i < marks.length; i++) {
@@ -8,7 +8,7 @@ function mmark(parentNode: Element) {
     }
 }
 
-export function Mcursors(selector: string) {
+export function Mcursors(selector: string): void {
     let nodes: NodeListOf<HTMLElement> = document.querySelectorAll(selector)
     for (let i = 0; i < nodes.length; i++) {
         mmark(nodes[i])

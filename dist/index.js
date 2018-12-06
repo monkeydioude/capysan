@@ -86,6 +86,18 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/displayData.ts":
+/*!****************************!*\
+  !*** ./src/displayData.ts ***!
+  \****************************/
+/*! exports provided: DisplayData */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"DisplayData\", function() { return DisplayData; });\nvar data = {\n    mail: \"moc.liamg@neiluj.sirud\",\n    phone: \"49 76 20 07 7(33+)\"\n};\nfunction DisplayData(id) {\n    var node = document.getElementById(id);\n    if (node == undefined || !node) {\n        return;\n    }\n}\n\n\n//# sourceURL=webpack:///./src/displayData.ts?");
+
+/***/ }),
+
 /***/ "./src/index.ts":
 /*!**********************!*\
   !*** ./src/index.ts ***!
@@ -94,7 +106,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mgauge__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./mgauge */ \"./src/mgauge.ts\");\n\ndocument.addEventListener('DOMContentLoaded', function () {\n    Object(_mgauge__WEBPACK_IMPORTED_MODULE_0__[\"Mcursors\"])('.m-cursor');\n});\n\n\n//# sourceURL=webpack:///./src/index.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mgauge__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./mgauge */ \"./src/mgauge.ts\");\n/* harmony import */ var _displayData__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./displayData */ \"./src/displayData.ts\");\n\n\ndocument.addEventListener('DOMContentLoaded', function () {\n    Object(_mgauge__WEBPACK_IMPORTED_MODULE_0__[\"Mcursors\"])('.m-cursor');\n    Object(_displayData__WEBPACK_IMPORTED_MODULE_1__[\"DisplayData\"])(\"mail\");\n    Object(_displayData__WEBPACK_IMPORTED_MODULE_1__[\"DisplayData\"])(\"phone\");\n});\n\n\n//# sourceURL=webpack:///./src/index.ts?");
 
 /***/ }),
 
