@@ -1,6 +1,7 @@
 body {
     background-color: #555555;
     font-family: "Determination Mono";
+    font-size: 18px;
 }
 
 #top {
@@ -126,4 +127,27 @@ body {
 
 .nihongo {
     font-family: "Comic sans MS";
+}
+.lttp li .flag {
+    line-height: 24px;
+    /* font-size: 20px; */
+}
+.flag::before {
+    display: inline-block;
+    content: " ";
+    height: 24px;
+    width: 18px;
+    background: url("../assets/flags_border.png") no-repeat;
+    margin-right: 5px;
+}
+
+.flag.baguette::before {
+    background-position: 0 0;
+}
+
+.flag.weirdhumor::before {
+    background-position: -40px 0;
+}
+.flag.nihongo::before {
+    background-position: -20px 0;
 }
