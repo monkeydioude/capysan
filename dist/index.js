@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"DisplayData\", function() { return DisplayData; });\nvar data = {\n    mail: \"moc.liamg@neiluj.sirud\",\n    phone: \"49 76 20 07 7(33+)\"\n};\nfunction DisplayData(id) {\n    var node = document.getElementById(id);\n    if (node == undefined || !node) {\n        return;\n    }\n}\n\n\n//# sourceURL=webpack:///./src/displayData.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"DisplayData\", function() { return DisplayData; });\nvar data = {\n    mail: \"moc.liamg@neiluj.sirud\",\n    phone: \"49 76 20 07 7)33+(\"\n};\nfunction reverseString(str) {\n    var splitString = str.split(\"\");\n    var reverseArray = splitString.reverse();\n    var joinArray = reverseArray.join(\"\");\n    return joinArray;\n}\nfunction DisplayData(id) {\n    var node = document.getElementById(id);\n    if (node == undefined || !node || data[id] == undefined) {\n        return;\n    }\n    var ctx = node.getContext('2d');\n    ctx.font = \"15px Determination Mono\";\n    ctx.fillText(reverseString(data[id]), 0, 10);\n}\n\n\n//# sourceURL=webpack:///./src/displayData.ts?");
 
 /***/ }),
 

@@ -197,3 +197,12 @@ body {
     margin-right: 5px;
     top: 0;
 }
+
+#mail {
+    width: 213px;
+    height: 15px;
+}
+#phone {
+    width: 171px;
+    height: 15px;
+}
