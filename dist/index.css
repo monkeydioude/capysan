@@ -61,6 +61,14 @@ body {
     top: 3px;
 }
 
+.skills .lttp {
+    margin: 0 0 10px 0;
+}
+
+.skills .lttp li{
+    line-height: 18px;
+}
+
 .training .lttp li:before {
     content: url("../assets/book.png");
 }
