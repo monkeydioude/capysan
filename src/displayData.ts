@@ -20,6 +20,6 @@ export function DisplayData(id: string): void {
     }
 
     let ctx = node.getContext('2d')
-    ctx.font = "15px Determination Mono"
+    ctx.font = "15px Determination Sans"
     ctx.fillText(reverseString(data[id]), 0, 10)
 }
