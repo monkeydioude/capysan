@@ -1,6 +1,5 @@
 let data: any = {
-    mail: "moc.liamg@neiluj.sirud",
-    phone: "49 76 20 07 7)33+("
+    mail: "moc.liamg@neiluj.sirud"
 }
 
 function reverseString(str: string) {
