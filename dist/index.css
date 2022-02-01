@@ -48,8 +48,12 @@
     font-style: normal;
 }
 
+.lang .furigana {
+    top: -12px;
+}
 .furigana {
     font-size: 10px;
+    font-weight: bold;
     position: absolute;
     top: -15px;
     width: 200px;
@@ -59,7 +63,9 @@
 .furiganed {
     position: relative;
 }
-
+.furigana.under {
+    top: 15px;
+}
 body {
     background-color: #555555;
     font-family: "Determination Sans";
@@ -268,4 +274,8 @@ body {
 #phone {
     width: 171px;
     height: 15px;
+}
+
+.skills .lttp.douchou li {
+    line-height: 27px;
 }
