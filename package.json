@@ -4,10 +4,10 @@
     "description": "",
     "main": "index.js",
     "devDependencies": {
-        "ts-loader": "^5.3.0",
+        "ts-loader": "^9.5.1",
         "typescript": "^3.1.6",
-        "webpack": "^4",
-        "webpack-cli": "^3.3.12"
+        "webpack": "^5",
+        "webpack-cli": "^5.1.4"
     },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
