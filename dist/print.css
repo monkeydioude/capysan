@@ -1,0 +1,19 @@
+body {
+  font-size: 10px;
+}
+
+#content {
+  box-shadow: none;
+}
+
+.m-gauge {
+  display: none;
+}
+
+.print {
+  display: block;
+}
+
+.no-print {
+  display: none;
+}
