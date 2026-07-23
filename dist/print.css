@@ -1,19 +1,249 @@
-body {
-  font-size: 10px;
-}
+@media print {
+  @page {
+    size: A4;
+    margin: 12mm 15mm 12mm 15mm;
+  }
 
-#content {
-  box-shadow: none;
-}
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
 
-.m-gauge {
-  display: none;
-}
+  html, body {
+    background: #ffffff !important;
+    color: #1e293b !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+    font-size: 11px !important;
+    line-height: 1.45 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
 
-.print {
-  display: block;
-}
+  #content {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
 
-.no-print {
-  display: none;
+  /* Header Styling */
+  #top {
+    margin-bottom: 16px !important;
+    border-bottom: 2px solid #0f172a !important;
+    padding-bottom: 10px !important;
+  }
+
+  #top .prez {
+    margin-right: 0 !important;
+  }
+
+  #top .prez h1 {
+    font-size: 24px !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.5px !important;
+    color: #0f172a !important;
+    margin: 0 0 4px 0 !important;
+    padding: 0 !important;
+    border-bottom: none !important;
+  }
+
+  #top .info {
+    padding-left: 0 !important;
+    font-size: 11px !important;
+    color: #334155 !important;
+    line-height: 1.5 !important;
+  }
+
+  #top .info b {
+    color: #0f172a !important;
+  }
+
+  /* Section Titles */
+  .section .dasso h2 {
+    font-size: 13.5px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    color: #0f172a !important;
+    margin: 18px 0 10px 0 !important;
+    padding-bottom: 3px !important;
+    border-bottom: 1.5px solid #0f172a !important;
+    background: transparent !important;
+  }
+
+  .section.exp .dasso h2 {
+    margin-top: 0 !important;
+  }
+
+  /* Experience Entries */
+  .section.exp .lttp {
+    padding-left: 0 !important;
+    margin: 0 !important;
+  }
+
+  .section.exp .lttp > li {
+    margin-bottom: 14px !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    list-style: none !important;
+  }
+
+  .flex-row {
+    display: flex !important;
+    flex-direction: row !important;
+  }
+
+  .section.exp .lttp li .flex-row {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: baseline !important;
+    margin-bottom: 4px !important;
+  }
+
+  .section.exp h3 {
+    font-size: 12.5px !important;
+    font-weight: 700 !important;
+    color: #0f172a !important;
+    margin: 0 !important;
+  }
+
+  .section.exp h4.date {
+    font-size: 10.5px !important;
+    font-weight: 600 !important;
+    color: #475569 !important;
+    margin: 0 !important;
+    text-align: right !important;
+  }
+
+  .section.exp .lttp li ul {
+    padding-left: 0 !important;
+    margin-top: 4px !important;
+  }
+
+  .tldr {
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    color: #0f172a !important;
+    margin-bottom: 4px !important;
+    padding: 3px 8px !important;
+    background-color: #f1f5f9 !important;
+    border-left: 3px solid #0f172a !important;
+    display: block !important;
+    border-radius: 0 4px 4px 0 !important;
+  }
+
+  .section.exp .lttp li ul li:not(.tldr) {
+    color: #334155 !important;
+    padding: 1.5px 0 1.5px 14px !important;
+    font-size: 10.5px !important;
+    position: relative !important;
+    line-height: 1.4 !important;
+  }
+
+  .section.exp .lttp li ul li:not(.tldr):before {
+    content: "•" !important;
+    position: absolute !important;
+    left: 2px !important;
+    top: 1.5px !important;
+    color: #64748b !important;
+    font-size: 11px !important;
+  }
+
+  /* Skills Section */
+  .skills {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  .skills-list-container {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 16px !important;
+    padding-left: 0 !important;
+    margin: 0 !important;
+  }
+
+  .skills-list-container > li {
+    flex: 1 1 30% !important;
+    min-width: 200px !important;
+    list-style: none !important;
+    font-size: 10.5px !important;
+    color: #334155 !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  .skills-list-container b {
+    color: #0f172a !important;
+    font-size: 11.5px !important;
+    display: block !important;
+    margin-top: 6px !important;
+    margin-bottom: 4px !important;
+    border-bottom: 1px solid #cbd5e1 !important;
+    padding-bottom: 2px !important;
+  }
+
+  .skills .lttp {
+    padding-left: 8px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .skills .lttp li {
+    padding: 1.5px 0 !important;
+    color: #334155 !important;
+  }
+
+  /* Training & Languages Section */
+  .training-lang-container {
+    display: flex !important;
+    justify-content: space-between !important;
+    gap: 24px !important;
+    margin-top: 10px !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  .training-lang-container .section {
+    width: 48% !important;
+  }
+
+  .training .lttp, .lang .lttp {
+    padding-left: 0 !important;
+  }
+
+  .training .lttp li, .lang .lttp li {
+    list-style: none !important;
+    padding: 3px 0 !important;
+    font-size: 10.5px !important;
+    color: #334155 !important;
+  }
+
+  .training .lttp li:before {
+    content: "" !important;
+    margin: 0 !important;
+  }
+
+  .training .date {
+    font-weight: 700 !important;
+    color: #0f172a !important;
+    margin-right: 6px !important;
+  }
+
+  .flag::before {
+    display: none !important;
+  }
+
+  /* Utility Display Rules */
+  .m-gauge {
+    display: none !important;
+  }
+
+  .print {
+    display: block !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
 }
